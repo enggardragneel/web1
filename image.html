@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Tugas UTS</title>
+        <link rel="stylesheet" href="uts.css">
+    </head>
+    <body>
+        <nav>
+            <p>Middle Test</p>
+        </nav>
+            <div class="side">
+                <a href="tabel.html">Konsep tabel</a>
+                <a href="hyper.html">Konsep Hyperlink</a>
+                <a href="bulet.html">Konsep bullet & numbering</a>
+                <a href="image.html" class="active">Konsep image</a>
+                <p>- crafted by enggar -</p>
+            </div>
+            <div class="konten">
+                <div id="gambar">
+                    <div class="gbr1">
+                        Photo saat SD :
+                        <img onclick="zoom('gbr1')" ondblclick="out('gbr1')" id="gbr1" src="kirin1.jpg" alt="kirin">
+                    </div>
+                    <div class="gbr2">
+                        Photo saat SMP :
+                        <img onclick="zoom('gbr2')" ondblclick="out('gbr2')" src="kirin2.jpg" id="gbr2" alt="kirin">
+                    </div>
+                    <div class="gbr3">
+                        Photo saat SMA :
+                        <img onclick="zoom('gbr3')" ondblclick="out('gbr3')" src="kirin3.jpg" id="gbr3" alt="kirin">
+                    </div>
+                    <div class="gbr4">
+                        Photo saat ini :
+                        <img onclick="zoom('gbr4')" ondblclick="out('gbr4')" src="kirin4.jpg" id="gbr4" alt="kirin">
+                    </div>
+                </div>
+                <a href="index.html">back</a>
+            </div>
+
+            <script>
+                function zoom(gambarnya){
+                    if(gambarnya == "gbr1"){
+                        document.getElementById(gambarnya).style.width = "300px";
+                        document.getElementById(gambarnya).style.height = "400px";
+                        document.getElementsByClassName("gbr1")[0].style.marginRight = "100px";
+                    }else if(gambarnya == "gbr2"){
+                        document.getElementById(gambarnya).style.width = "300px";
+                        document.getElementById(gambarnya).style.height = "400px";
+                        document.getElementsByClassName("gbr2")[0].style.marginRight = "100px";
+                    }else if(gambarnya == "gbr3"){
+                        document.getElementById(gambarnya).style.width = "300px";
+                        document.getElementById(gambarnya).style.height = "400px";
+                        document.getElementsByClassName("gbr3")[0].style.marginRight = "100px";
+                    }else{
+                        document.getElementById(gambarnya).style.width = "300px";
+                        document.getElementById(gambarnya).style.height = "400px";
+                        document.getElementsByClassName("gbr4")[0].style.marginRight = "100px";
+                    }
+                }
+
+                function out(gambarnya){
+                    if(gambarnya == "gbr1"){
+                        document.getElementById(gambarnya).style.width = "200px";
+                        document.getElementById(gambarnya).style.height = "300px";
+                        document.getElementsByClassName("gbr1")[0].style.marginRight = "0";
+                    }else if(gambarnya == "gbr2"){
+                        document.getElementById(gambarnya).style.width = "200px";
+                        document.getElementById(gambarnya).style.height = "300px";
+                        document.getElementsByClassName("gbr2")[0].style.marginRight = "0";
+                    }else if(gambarnya == "gbr3"){
+                        document.getElementById(gambarnya).style.width = "200px";
+                        document.getElementById(gambarnya).style.height = "300px";
+                        document.getElementsByClassName("gbr3")[0].style.marginRight = "0";
+                    }else{
+                        document.getElementById(gambarnya).style.width = "200px";
+                        document.getElementById(gambarnya).style.height = "300px";
+                        document.getElementsByClassName("gbr4")[0].style.marginRight = "0";
+                    }
+                }
+
+            </script>
+    </body>
+</html>

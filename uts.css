@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #2d2d2d;
+}
+
+nav p{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side{
+    width: 25%;
+    height: 100%;
+    background-color: #202020;
+    position: relative;
+    float: left;
+}
+
+
+.side a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: block;
+    padding: 40px 0px 40px 20px;
+}
+
+.side a:active{
+    background-color: #c0392b;
+}
+
+.side a:hover:not(.active){
+    background-color: #af0606;
+}
+
+.active{
+    background-color: #c0392b;
+}
+
+.side p{
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+}
+
+.konten{
+    margin-left: 25%;
+    padding: 20px 20px 0 20px;
+    overflow-x: auto;
+}
+
+.konten p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.konten .kt{
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kt tr td{
+    border: 1px solid black;
+    width: 300px;
+}
+
+.black{
+    background-color: #000;
+    color: #fff;
+}
+
+.konten a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 909px;
+    display: block;
+    text-align: right;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+#selamat{
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.konten .bullet, .num{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 40%;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.konten #gambar{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gambar img{
+    width: 200px;
+    height: 300px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+}
+
+#gambar .gbr1, .gbr2, .gbr3, .gbr4{
+    display: inline-block;
+    width: 220px;
+    margin-right: 15px;
+    transition: ease-in 0.5s;
+    
+}
